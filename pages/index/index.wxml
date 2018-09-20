@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+
+    <view class="formGroup">
+      <text class="lable">计算项目</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+          <text>{{item.value}}</text>
+        </radio>
+      </radio-group>
+    </view>
+
+    <view class="formGroup {{presentClass}}">
+      <text class="lable">存入本金</text>
+      <input class="formControl" placeholder-class="phcolor" placeholder="打算存多少钱" type='digit' disabled="{{presentDisabled}}" bindinput="present" value="{{present}}"></input>
+    </view>
+
+    <view class="formGroup">
+      <text class="lable">年利率比</text>
+      <input class="formControl" placeholder-class="phcolor" placeholder="每年收益率（%）" type='digit' bindinput="yield" value="{{yield}}"></input>
+    </view>
+
+    <view class="formGroup">
+      <text class="lable">存入年限</text>
+      <input class="formControl" placeholder-class="phcolor" placeholder="打算存几年" type='digit' bindinput="year" value="{{year}}"></input>
+    </view>
+
+    <view class="formGroup {{futureClass}}">
+      <text class="lable">复利终值</text>
+      <input class="formControl" placeholder-class="phcolor" placeholder="最终受益" type='digit' disabled="{{futureDisabled}}" bindinput="future" value="{{future}}"></input>
+    </view>
+   
+  <view class='submit-view'>
+    <button class='btn-primary' type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+		disabled="{{disabled}}" bindtap="submit">提交</button>
+    <button class='btn btn-default' bindtap="reset">复位</button>
+  </view>
+
+</view>

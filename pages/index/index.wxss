@@ -1,0 +1,56 @@
+/**index.wxss**/
+
+.formGroup{
+  padding: 32rpx 20rpx;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border-bottom: 1px solid #efeff4;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+}
+.lable{
+  display: inline-block;
+  padding-right: 40rpx;
+  padding-left: 10rpx;
+  margin: 0;
+  color: #000000;
+}
+.phcolor{
+  color: #b2b2b2;
+}
+
+.formControl{
+  display: inline-block;
+  margin: 0;
+}
+
+.container{
+  padding-top: 30rpx;
+  margin-right: auto;
+  margin-left: auto;
+}
+.btn{
+  font-weight:200;
+}
+.btn-primary {
+  margin-bottom: 30rpx;
+}
+.submit-view{
+  margin-top: 30rpx;
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+}
+.btn-primary-hover{
+  background-color: #09a707; 
+}
+.radio {
+    display: block;
+    padding: 5px;
+    float: left;
+}
+
+.disabled{
+  background-color: #fafafa;
+}

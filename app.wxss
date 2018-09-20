@@ -1,0 +1,13 @@
+/**app.wxss**/
+.fl{
+  float: left;
+}
+.clear{
+  clear: both;
+  font-size: 0;
+  text-indent: -999px;
+  
+}
+page{
+  background-color: #efeff4;
+}
